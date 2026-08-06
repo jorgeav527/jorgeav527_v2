@@ -1,4 +1,4 @@
-EXPERIENCE: "work experience"
+EXPERIENCE: "Professional Experience"
 PROFESSION: "Civil Engineer"
 SECOND_PROFESSION: "Software Engineer"
 EDUCATION: "education"
@@ -9,7 +9,7 @@ VOLUNTER: "volunteering"
 ABOUT: "about me"
 
 ABOUT_DESCRIPTION:
-  - Since 2018, Jorge Alarcón is a Full Stack DevOps and Data Engineer with over seven years of professional experience in software development and data engineering. Specialized in Linux, Python and Rust, he has strong expertise in building and automating systems, developing robust applications, and optimizing engineering processes through modern DevOps and data-driven practices. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
+  - Platform Engineer with 7+ years of experience designing and automating cloud infrastructure, CI/CD pipelines, and developer platforms across AWS, Terraform, and containerized environments. Proven track record of building production-grade systems from zero, reducing infrastructure costs through architecture decisions, and enabling faster delivery cycles for distributed teams. Background in data engineering, full stack development, and serverless architecture adds rare breadth to infrastructure work. Started as a Civil Engineer with a focus on process automation, bringing systems thinking and precision to every technical decision.
 
 LANGUAGES:
   - "Spanish: Native"
@@ -121,35 +121,21 @@ CIVIL_EXPERIENCES:
 
 SOFTWARE_EXPERIENCES:
   - company: "Kroma"
-    title: "CloudOps Engineer"
+    title: "CloudOps & Full-Stack Engineer"
     location: "Arequipa, Peru"
     type: "Remote, Full-time"
     start: "Feb 2026"
     end: "Present"
     time: "5 mos"
     responsibilities:
-      - "Provisioned serverless AWS infrastructure using Terraform and Terragrunt across isolated dev and production environments at a monthly cost of $0.63 USD."
-      - "Built CI/CD pipelines with GitHub Actions to automate deployments across dev and production."
-      - "Configured frontend delivery stack with S3, CloudFront, ACM, and Route 53 for performance, security, and DNS management."
-      - "Secured backend access using Amazon Cognito and API Gateway with role-based authentication."
+      - Architected a serverless AWS infrastructure leveraging Lambda, API Gateway, AppSync, and CloudFront.
+      - Developed a secure admin API via Agent AI SDD to power a multi-purpose e-commerce and e-learning platform, featuring strict JWT, RBAC, and soft-delete.
+      - Automated CI/CD via GitHub Actions for FastAPI microservices, Nuxt.js frontends, and IaC (Terraform/Pulumi).
+      - Optimized a 47-service serverless architecture, reducing idle baseline compute costs to just $0.65.
     tools:
       - "AWS (CloudFront, Route 53, Cognito, API Gateway)"
       - "CI/CD (GitHub Actions)"
       - "Terraform"
-
-  - company: "Kroma"
-    title: "Flull-Stack Developer"
-    location: "Arequipa, Peru"
-    type: "Remote, Full-time"
-    start: "Feb 2026"
-    end: "Present"
-    time: "5 mos"
-    responsibilities:
-      - "Built a multi-purpose platform for consulting, courses, video content, and e-commerce using Nuxt.js."
-      - "Developed a serverless backend with FastAPI on AWS Lambda via Docker handling 30-40 endpoints through API Gateway."
-      - "Built an admin dashboard with role-based access control on isolated DNS using the same Nuxt.js codebase."
-      - "Accelerated delivery using spec-driven development and AI-assisted workflows via OpenCode."
-    tools:
       - "Python (FastAPI)"
       - "JavaScript (Nuxt)"
       - "NoSQL (DynamoDB)"
@@ -199,9 +185,16 @@ SOFTWARE_EXPERIENCES:
     end: "June 2025"
     time: "6 mos"
     responsibilities:
-      - "Built and deployed scalable FastAPI and Echo backends with Clean Architecture and TDD, integrating Redis, GraphQL, and WebSockets."
+      - Cut EKS control plane costs by $73/month per environment by migrating workloads to Amazon ECS without compromising scalability.
+      - Architected a highly available containerized environment using Terraform to provision Amazon ECS on Fargate for serverless compute, while orchestrating Redpanda on EC2 Spot Instances to achieve high-throughput event streaming with significant infrastructure cost optimization.
+      - Standardized observability and security through Prometheus, Grafana, and strict Security Group and Auto Scaling configurations.
     tools:
-      - "Grafana"
+      - Monitoring (Grafana, Prometheus)
+      - AWS (ECS, EKS)
+      - Terraform
+      - Ansible
+      - Kubernetes
+      - Redpanda
 
   - company: "Roadr"
     title: "Full Stack DevOps"
@@ -211,27 +204,24 @@ SOFTWARE_EXPERIENCES:
     end: "June 2025"
     time: "2 yr 6 mos"
     responsibilities:
-      - "Worked with diverse tech stacks across backend, frontend with SQL/NoSQL databases."
-      - "Containerized frameworks with Docker and coordinated incident response for container issues."
-      - "Implemented CI/CD pipelines for deploying applications for staging and production environments."
-      - "Implemented and deployed REST APIs, gRPC, WebSockets, GraphQL, and event-driven architectures."
-      - "Identified a memory leak and performance bottleneck through infrastructure monitoring."
-      - "Reduced cloud infrastructure costs by 20% through migrating Kubernetes workloads to ECS on AWS."
+      - Architected and managed high-availability containerized environments across AWS and Linode using Docker, Terraform, and Ansible for multi-language backend services.
+      - Engineered CI/CD pipelines with GitHub Actions and Jenkins, enabling automated deployments across staging and production environments.
+      - Implemented and deployed REST APIs, gRPC, WebSockets, GraphQL, and event-driven architectures across distributed microservices.
+      - Optimized PostgreSQL, MongoDB, and Cassandra performance while integrating high-throughput streaming via Kafka, Redpanda, and Redis.
+      - Identified and resolved memory leaks and performance bottlenecks through real-time monitoring with Prometheus, Grafana, and Netdata.
     tools:
       - "Python (FastAPI, Airflow)"
-      - "Rust (Actix Web, Leptos)"
+      - "Rust (Axum Web, Leptos)"
       - "JavaScript (Express)"
       - "Docker (DockerHub)"
       - "AWS (ECS, Load Balancer, Route 53, CloudFront, S3, ASG, CloudMap, CloudWatch, CloudTrail, RDS)"
       - "CI/CD (Jenkins, GitHub Actions)"
       - "Terraform"
       - "Ansible"
-      - "Kubernetes"
       - "SQL (PostgreSQL)"
       - "NoSQL (MongoDB)"
       - "Redis (Pub/Sub)"
       - "Kafka"
-      - "Monitoring (Grafana, Prometheus)"
 
   - company: "Roadr"
     title: "Data Engineer"
@@ -277,22 +267,20 @@ SOFTWARE_EXPERIENCES:
       - "Docker"
       - "Terraform"
 
-  - company: "UCSM - EPIC Labs"
+  - company: "GRUPO RPG SAC"
     title: "Full Stack Developer"
-    location: "Yanahuara, Arequipa, Perú"
+    location: "Arequipa, Perú"
     type: "Full-time"
     start: "Dec 2019"
     end: "Jan 2021"
     time: "1 yr 2 mos"
     responsibilities:
-      - "Designed, developed, and deployed a web application pilot web tool that met laboratory requirements."
-      - "Performed data modeling and schema design to define database structure and relationships."
-      - "Implemented a planning process flow for students, researchers, and clients using a SaaS-style architecture."
+      - Built and deployed a Django/HTMX web tool on AWS EC2 with RDS and S3, automating laboratory reports and real-time performance dashboards.
+      - Implemented CI/CD pipelines with GitHub Actions for automated staging and production deployments.
     tools:
-      - "AWS (Amplify, RDS, IAM, CloudWatch, S3, Athena)"
-      - "GitHub Actions"
+      - "AWS (RDS, IAM, CloudWatch, S3, EC2)"
+      - "CI/CD (GitHub, Python, Bash)"
       - "Docker"
-      - "Terraform"
 
 PROJECTS: "Projects"
 PROJECT_LIST:
