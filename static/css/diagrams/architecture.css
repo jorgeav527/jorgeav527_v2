@@ -76,3 +76,40 @@
   background: #f0f2f5;
   color: #64748b;
 }
+
+.d3-architecture svg {
+  cursor: grab;
+}
+
+.d3-architecture svg:active {
+  cursor: grabbing;
+}
+
+/* Zone dashed "march" border animation */
+@keyframes arch-zone-march {
+  to {
+    stroke-dashoffset: 22;
+  }
+}
+
+.d3-architecture .arch-zone {
+  animation: arch-zone-march 1.6s linear infinite;
+}
+
+/* Node hover transitions */
+.d3-architecture .arch-node {
+  transition: opacity 0.15s ease;
+}
+
+.d3-architecture .arch-node .node-bg {
+  transition: stroke-width 0.15s ease, filter 0.15s ease;
+}
+
+.d3-architecture .arch-node:hover .node-bg {
+  stroke-width: 2;
+  filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.25));
+}
+
+.d3-architecture .arch-link {
+  transition: opacity 0.15s ease, stroke-width 0.15s ease;
+}
